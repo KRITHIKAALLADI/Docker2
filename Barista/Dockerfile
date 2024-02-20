@@ -9,7 +9,7 @@ LABEL "Project"="Barista"
 RUN yum install httpd wget unzip -y
 
 # Download the website template
-RUN https://www.tooplate.com/zip-templates/2137_barista_cafe.zip --no-check-certificate
+RUN wget https://www.tooplate.com/zip-templates/2137_barista_cafe.zip --no-check-certificate
 
 # Unzip the downloaded template
 RUN unzip 2137_barista_cafe.zip
